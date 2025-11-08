@@ -56,12 +56,13 @@ SELECT name, price
 FROM PRODUCTS 
 WHERE price > (SELECT AVG(price) FROM PRODUCTS);
 ```
+---
 📊 Example Output
-Order ID	Customer	Status	Total Amount
-```Table
-101	201	Delivered	2500.00
-102	202	Pending	1400.00
-```
+|Order ID|	Customer|	Status	|Total Amount|
+|------|--------|----------|----------|
+|101	|201	|Delivered	|2500.00|
+|102	|202	|Pending|	1400.00|
+---
 🏁 Conclusion
 
 The E-Commerce Order Tracking System improves order management efficiency by automating key business logic within the database layer.
